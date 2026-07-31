@@ -1,5 +1,11 @@
+-- Having to create a SCHEMA allows the user to make tables but having the USE case allows the user to actually select a data table that the user would like to work with
+DROP TABLE IF exists fraud_sections;
 CREATE schema fraud_sections;
 USE fraud_sections;
+
+-- Unsigned basically means that they a number can only go from 0 and positive, no negative numbers will be presented
+-- Tinyint basically means that it can work with a small amount of number with at least 1 byte
+-- PK is more so about working with one columns or can contribute to multiple as well so long as there is a value that is involved. Won't result in NULL
 
 create TABLE fraud_types( 
 	fraud_type_id tinyint unsigned auto_increment primary Key,
@@ -108,3 +114,37 @@ create table call_logs(
     abandoned_flag boolean,
     language varchar(20)
     );
+    
+    INSERT INTO channels (channel_id, channel_name, is_digital) VALUES
+		(1, 'Online Banking', 1),
+        (2, 'Mobile App', 1),
+        (3, 'ATM', 0),
+        (4, 'Branch', 0),
+        (5, 'Phone', 0),
+        (6, 'Card Terminal', 0),
+        (7, 'Wire Room', 0);
+        
+	INSERT INTO fraud_types (fraud_type_id, type_code, type_name, category, is_scam, baseline_recovery_rate, median_loss_target) VALUES
+		(1, 'CNP_CARD', 'Card-Not-Present', 'Unauthorized', '1', 0.900, 180.00),
+        (2, 'SKIMMING', 'Card Skimming/ATM', 'Unauthorized', '1', 0.750, 600.00),
+        (3, 'PHISHING', 'Phishing/Smishing', 'Unauthorized', '1', 0.550, 1900.00),
+        (4, 'ATO', 'Account Takeover', 'Unauthorized','0', 0.450, 4200.00),
+        (5, 'ZELLE_SCAM', 'Zelle/P2P Scam', 'Authorized','0', 0.120, 850.00),
+        (6, 'CHECK_FRAUD', 'Check Fraud/Washing', 'Unauthorized', '0', 0.400, 3400.00),
+        (7, 'BEC_WIRE', 'Business Email Compromise', 'Authorized','0', 0.350, 86000.00),
+        (8, 'SYNTH_ID', 'Identity Theft/Synthetic', 'Unauthorized','0', 0.200, 9500.00),
+        (9, 'ELDER_EXP', 'Elder Exploitation/Romance', 'Authorized','1', 0.080, 22000.00),
+        (10, 'TECH_SUPPORT', 'Tech Support/Impersonation', 'Authorized','1', 0.250, 5100.00),
+        (11, 'INSIDER', 'Insider/Employee','Unauthorized','0', 0.600, 140000.00);
+        
+SELECT category, COUNT(*), ROUND(AVG(baseline_recovery_rate),3)
+FROM fraud_types GROUP BY category;
+
+CREATE INDEX idx_cases_status ON fraud_cases (case_status);
+CREATE INDEX idx_cases_type_status ON fraud_cases (fraud_type_id, case_status);
+CREATE INDEX idx_calls_ts ON call_logs (call_ts);
+CREATE INDEX idx_recovery_date ON recovery_events (recovery_date);
+
+	
+		
+	
