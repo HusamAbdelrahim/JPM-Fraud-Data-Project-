@@ -1,6 +1,7 @@
 DROP DATABASE IF EXISTS fraud_sections;
 CREATE SCHEMA fraud_sections DEFAULT CHARACTER SET utf8mb4;
 USE fraud_sections;
+SELECT COUNT(*) FROM fraud_cases;
 
 CREATE TABLE fraud_types (
     fraud_type_id TINYINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -89,33 +90,81 @@ CREATE INDEX idx_cases_type_status ON fraud_cases (fraud_type_id, case_status);
 
 INSERT INTO channels (channel_id, channel_name, is_digital) VALUES
     (1, 'Online Banking', 1),
-    (2, 'Mobile App',     1),
-    (3, 'ATM',            0),
-    (4, 'Branch',         0),
-    (5, 'Phone',          0),
-    (6, 'Card Terminal',  0),
-    (7, 'Wire Room',      0);
+    (2, 'Mobile App',1),
+    (3, 'ATM', 0),
+    (4, 'Branch', 0),
+    (5, 'Phone', 0),
+    (6, 'Card Terminal', 0),
+    (7, 'Wire Room',0);
 
 INSERT INTO fraud_types
     (fraud_type_id, type_code, type_name, category, is_scam,
      baseline_recovery_rate, median_loss_target)
 VALUES
-    (1,  'CNP_CARD',     'Card-Not-Present',            'Unauthorized', 0, 0.900,    180.00),
-    (2,  'SKIMMING',     'Card Skimming/ATM',           'Unauthorized', 0, 0.750,    600.00),
-    (3,  'PHISHING',     'Phishing/Smishing',           'Unauthorized', 1, 0.550,   1900.00),
-    (4,  'ATO',          'Account Takeover',            'Unauthorized', 0, 0.450,   4200.00),
-    (5,  'ZELLE_SCAM',   'Zelle/P2P Scam',              'Authorized',   1, 0.120,    850.00),
-    (6,  'CHECK_FRAUD',  'Check Fraud/Washing',         'Unauthorized', 0, 0.400,   3400.00),
-    (7,  'BEC_WIRE',     'Business Email Compromise',   'Authorized',   1, 0.350,  86000.00),
-    (8,  'SYNTH_ID',     'Identity Theft/Synthetic',    'Unauthorized', 0, 0.200,   9500.00),
-    (9,  'ELDER_EXP',    'Elder Exploitation/Romance',  'Authorized',   1, 0.080,  22000.00),
-    (10, 'TECH_SUPPORT', 'Tech Support/Impersonation',  'Authorized',   1, 0.250,   5100.00),
-    (11, 'INSIDER',      'Insider/Employee',            'Unauthorized', 0, 0.600, 140000.00);
+    (1,  'CNP_CARD','Card-Not-Present', 'Unauthorized', 0, 0.900,  180.00),
+    (2,  'SKIMMING','Card Skimming/ATM','Unauthorized', 0, 0.750, 600.00),
+    (3,  'PHISHING', 'Phishing/Smishing', 'Unauthorized', 1, 0.550, 1900.00),
+    (4,  'ATO', 'Account Takeover', 'Unauthorized', 0, 0.450, 4200.00),
+    (5,  'ZELLE_SCAM','Zelle/P2P Scam','Authorized',   1, 0.120, 850.00),
+    (6,  'CHECK_FRAUD','Check Fraud/Washing', 'Unauthorized', 0, 0.400, 3400.00),
+    (7,  'BEC_WIRE','Business Email Compromise', 'Authorized',   1, 0.350, 86000.00),
+    (8,  'SYNTH_ID', 'Identity Theft/Synthetic', 'Unauthorized', 0, 0.200,9500.00),
+    (9,  'ELDER_EXP','Elder Exploitation/Romance','Authorized',   1, 0.080,22000.00),
+    (10, 'TECH_SUPPORT','Tech Support/Impersonation','Authorized',   1, 0.250, 5100.00),
+    (11, 'INSIDER', 'Insider/Employee', 'Unauthorized', 0, 0.600, 140000.00);
 
-SELECT category, COUNT(*) AS type_count, ROUND(AVG(baseline_recovery_rate), 3) AS avg_recovery
-FROM fraud_types
-GROUP BY category;
+SELECT
+    fc.case_ref,
+    ft.type_name AS fraud_type,
+    ft.category,
+    ft.is_scam,
+    ch.channel_name,
+    fc.sub_scenario,
+    fc.detection_method,
+    fc.case_owner_team,
+    fc.case_status,
+    fc.fraud_start_ts,
+    DATE(fc.fraud_start_ts) AS fraud_date,
+    fc.detection_ts,
+    fc.customer_report_ts,
+    fc.resolution_ts,
+    fc.amount_attempted,
+    fc.amount_lost,
+    fc.amount_recovered,
+    (fc.amount_lost - fc.amount_recovered) AS net_loss,
+    ROUND(fc.amount_recovered / NULLIF(fc.amount_lost, 0), 4) AS recovery_rate,
+    fc.transaction_count,
+    fc.reimbursed_flag,
+    fc.provisional_credit_flag,
+    fc.cross_border_flag,
+    TIMESTAMPDIFF(HOUR, fc.fraud_start_ts, fc.detection_ts) AS detect_lag_hours,
+    TIMESTAMPDIFF(HOUR, fc.fraud_start_ts, fc.customer_report_ts) AS report_lag_hours,
+    TIMESTAMPDIFF(DAY, fc.fraud_start_ts, fc.resolution_ts) AS resolution_days,
+    CASE
+        WHEN fc.customer_report_ts IS NULL THEN 'Never Reported'
+        WHEN TIMESTAMPDIFF(HOUR, fc.fraud_start_ts, fc.customer_report_ts) < 24 THEN '1. <24h'
+        WHEN TIMESTAMPDIFF(HOUR, fc.fraud_start_ts, fc.customer_report_ts) < 72 THEN '2. 24-72h'
+        WHEN TIMESTAMPDIFF(HOUR, fc.fraud_start_ts, fc.customer_report_ts) < 168 THEN '3. 3-7d'
+        ELSE '4. 7d+'
+    END AS report_lag_band,
+    a.product_name,
+    a.balance_band,
+    a.zelle_enabled,
+    a.account_status,
+    c.customer_ref,
+    c.age_band,
+    c.segment,
+    c.state,
+    c.city,
+    c.tenure_years,
+    c.digital_enrolled,
+    c.prior_fraud_claims
+FROM fraud_cases fc
+JOIN fraud_types ft ON fc.fraud_type_id = ft.fraud_type_id
+JOIN channels ch ON fc.channel_id = ch.channel_id
+JOIN accounts a ON fc.account_id = a.account_id
+JOIN customers c ON a.customer_id = c.customer_id;
 
-SELECT COUNT(*) AS channel_count FROM channels;
 		
+
 	
