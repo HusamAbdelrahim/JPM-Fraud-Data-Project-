@@ -1,0 +1,2712 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...creator-author-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='JPMorgan CSV Fraud Set' inline='true' name='federated.0te66v407u8cx915uu7991v214vv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='JPMorgan CSV Fraud Set' name='textscan.1630v7k1puvc121duj0ks01cbbve'>
+            <connection class='textscan' directory='C:/Users/Mason/Desktop/Projects/JPMorgan Data Project' filename='JPMorgan CSV Fraud Set.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1630v7k1puvc121duj0ks01cbbve' name='JPMorgan CSV Fraud Set.csv' table='[JPMorgan CSV Fraud Set#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='case_ref' ordinal='0' />
+            <column datatype='string' name='fraud_type' ordinal='1' />
+            <column datatype='string' name='category' ordinal='2' />
+            <column datatype='integer' name='is_scam' ordinal='3' />
+            <column datatype='string' name='channel_name' ordinal='4' />
+            <column datatype='string' name='sub_scenario' ordinal='5' />
+            <column datatype='string' name='detection_method' ordinal='6' />
+            <column datatype='string' name='case_owner_team' ordinal='7' />
+            <column datatype='string' name='case_status' ordinal='8' />
+            <column datatype='datetime' name='fraud_start_ts' ordinal='9' />
+            <column datatype='date' name='fraud_date' ordinal='10' />
+            <column datatype='datetime' name='detection_ts' ordinal='11' />
+            <column datatype='datetime' name='customer_report_ts' ordinal='12' />
+            <column datatype='datetime' name='resolution_ts' ordinal='13' />
+            <column datatype='real' name='amount_attempted' ordinal='14' />
+            <column datatype='real' name='amount_lost' ordinal='15' />
+            <column datatype='real' name='amount_recovered' ordinal='16' />
+            <column datatype='real' name='net_loss' ordinal='17' />
+            <column datatype='real' name='recovery_rate' ordinal='18' />
+            <column datatype='integer' name='transaction_count' ordinal='19' />
+            <column datatype='integer' name='reimbursed_flag' ordinal='20' />
+            <column datatype='integer' name='provisional_credit_flag' ordinal='21' />
+            <column datatype='integer' name='cross_border_flag' ordinal='22' />
+            <column datatype='integer' name='detect_lag_hours' ordinal='23' />
+            <column datatype='integer' name='report_lag_hours' ordinal='24' />
+            <column datatype='integer' name='resolution_days' ordinal='25' />
+            <column datatype='string' name='report_lag_band' ordinal='26' />
+            <column datatype='string' name='product_name' ordinal='27' />
+            <column datatype='string' name='balance_band' ordinal='28' />
+            <column datatype='integer' name='zelle_enabled' ordinal='29' />
+            <column datatype='string' name='account_status' ordinal='30' />
+            <column datatype='string' name='customer_ref' ordinal='31' />
+            <column datatype='string' name='age_band' ordinal='32' />
+            <column datatype='string' name='segment' ordinal='33' />
+            <column datatype='string' name='state' ordinal='34' />
+            <column datatype='string' name='city' ordinal='35' />
+            <column datatype='real' name='tenure_years' ordinal='36' />
+            <column datatype='integer' name='digital_enrolled' ordinal='37' />
+            <column datatype='integer' name='prior_fraud_claims' ordinal='38' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_ref</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[case_ref]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>case_ref</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fraud_type]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>fraud_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_scam</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_scam]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>is_scam</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channel_name]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>channel_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_scenario</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_scenario]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>sub_scenario</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detection_method]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>detection_method</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_owner_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[case_owner_team]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>case_owner_team</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[case_status]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>case_status</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_start_ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[fraud_start_ts]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>fraud_start_ts</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[fraud_date]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>fraud_date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[detection_ts]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>detection_ts</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_report_ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[customer_report_ts]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>customer_report_ts</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resolution_ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[resolution_ts]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>resolution_ts</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_attempted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount_attempted]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>amount_attempted</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_lost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount_lost]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>amount_lost</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_recovered</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount_recovered]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>amount_recovered</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_loss]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>net_loss</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovery_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recovery_rate]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>recovery_rate</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transaction_count]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>transaction_count</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reimbursed_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reimbursed_flag]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>reimbursed_flag</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>provisional_credit_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[provisional_credit_flag]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>provisional_credit_flag</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cross_border_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cross_border_flag]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>cross_border_flag</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detect_lag_hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[detect_lag_hours]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>detect_lag_hours</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>report_lag_hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[report_lag_hours]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>report_lag_hours</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resolution_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[resolution_days]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>resolution_days</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>report_lag_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[report_lag_band]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>report_lag_band</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[balance_band]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>balance_band</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zelle_enabled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zelle_enabled]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>zelle_enabled</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>account_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[account_status]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>account_status</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_ref</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_ref]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>customer_ref</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_band]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>age_band</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[segment]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>segment</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure_years</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tenure_years]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>tenure_years</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>digital_enrolled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[digital_enrolled]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>digital_enrolled</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prior_fraud_claims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prior_fraud_claims]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>prior_fraud_claims</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='JPMorgan CSV Fraud Set.csv' datatype='table' name='[__tableau_internal_object_id__].[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]' role='measure' type='quantitative' />
+      <column caption='Account Status' datatype='string' name='[account_status]' role='dimension' type='nominal' />
+      <column caption='Age Band' datatype='string' name='[age_band]' role='dimension' type='nominal' />
+      <column caption='Amount Attempted' datatype='real' name='[amount_attempted]' role='measure' type='quantitative' />
+      <column caption='Amount Lost' datatype='real' name='[amount_lost]' role='measure' type='quantitative' />
+      <column caption='Amount Recovered' datatype='real' name='[amount_recovered]' role='measure' type='quantitative' />
+      <column caption='Balance Band' datatype='string' name='[balance_band]' role='dimension' type='nominal' />
+      <column caption='Case Owner Team' datatype='string' name='[case_owner_team]' role='dimension' type='nominal' />
+      <column caption='Case Ref' datatype='string' name='[case_ref]' role='dimension' type='nominal' />
+      <column caption='Case Status' datatype='string' name='[case_status]' role='dimension' type='nominal' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Channel Name' datatype='string' name='[channel_name]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Cross Border Flag' datatype='integer' name='[cross_border_flag]' role='measure' type='quantitative' />
+      <column caption='Customer Ref' datatype='string' name='[customer_ref]' role='dimension' type='nominal' />
+      <column caption='Customer Report Ts' datatype='datetime' name='[customer_report_ts]' role='dimension' type='ordinal' />
+      <column caption='Detect Lag Hours' datatype='integer' name='[detect_lag_hours]' role='measure' type='quantitative' />
+      <column caption='Detection Method' datatype='string' name='[detection_method]' role='dimension' type='nominal' />
+      <column caption='Detection Ts' datatype='datetime' name='[detection_ts]' role='dimension' type='ordinal' />
+      <column caption='Digital Enrolled' datatype='integer' name='[digital_enrolled]' role='measure' type='quantitative' />
+      <column caption='Fraud Date' datatype='date' name='[fraud_date]' role='dimension' type='ordinal' />
+      <column caption='Fraud Start Ts' datatype='datetime' name='[fraud_start_ts]' role='dimension' type='ordinal' />
+      <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+      <column caption='Is Scam' datatype='integer' name='[is_scam]' role='measure' type='quantitative' />
+      <column caption='Net Loss' datatype='real' name='[net_loss]' role='measure' type='quantitative' />
+      <column caption='Prior Fraud Claims' datatype='integer' name='[prior_fraud_claims]' role='measure' type='quantitative' />
+      <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+      <column caption='Provisional Credit Flag' datatype='integer' name='[provisional_credit_flag]' role='measure' type='quantitative' />
+      <column caption='Recovery Rate' datatype='real' name='[recovery_rate]' role='measure' type='quantitative' />
+      <column caption='Reimbursed Flag' datatype='integer' name='[reimbursed_flag]' role='measure' type='quantitative' />
+      <column caption='Report Lag Band' datatype='string' name='[report_lag_band]' role='dimension' type='nominal' />
+      <column caption='Report Lag Hours' datatype='integer' name='[report_lag_hours]' role='measure' type='quantitative' />
+      <column caption='Resolution Days' datatype='integer' name='[resolution_days]' role='measure' type='quantitative' />
+      <column caption='Resolution Ts' datatype='datetime' name='[resolution_ts]' role='dimension' type='ordinal' />
+      <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Sub Scenario' datatype='string' name='[sub_scenario]' role='dimension' type='nominal' />
+      <column caption='Tenure Years' datatype='real' name='[tenure_years]' role='measure' type='quantitative' />
+      <column caption='Transaction Count' datatype='integer' name='[transaction_count]' role='measure' type='quantitative' />
+      <column caption='Zelle Enabled' datatype='integer' name='[zelle_enabled]' role='measure' type='quantitative' />
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Mason/AppData/Local/Temp/TableauTemp/#TableauTemp_0sd52rp1vcf7dm181sxh20im7gbg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2026 11:48:50 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>case_ref</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[case_ref]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_ref</remote-alias>
+              <ordinal>0</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fraud_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>2</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_scam</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_scam]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_scam</remote-alias>
+              <ordinal>3</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sub_scenario</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sub_scenario]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sub_scenario</remote-alias>
+              <ordinal>5</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>detection_method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[detection_method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>detection_method</remote-alias>
+              <ordinal>6</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>case_owner_team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[case_owner_team]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_owner_team</remote-alias>
+              <ordinal>7</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>case_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[case_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_status</remote-alias>
+              <ordinal>8</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_start_ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[fraud_start_ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_start_ts</remote-alias>
+              <ordinal>9</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[fraud_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>598</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>detection_ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[detection_ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>detection_ts</remote-alias>
+              <ordinal>11</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_report_ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[customer_report_ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_report_ts</remote-alias>
+              <ordinal>12</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>750</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>resolution_ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[resolution_ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>resolution_ts</remote-alias>
+              <ordinal>13</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>887</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_attempted</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount_attempted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_attempted</remote-alias>
+              <ordinal>14</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_lost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount_lost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_lost</remote-alias>
+              <ordinal>15</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>899</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_recovered</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount_recovered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_recovered</remote-alias>
+              <ordinal>16</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>893</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_loss</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_loss]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_loss</remote-alias>
+              <ordinal>17</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>821</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recovery_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[recovery_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recovery_rate</remote-alias>
+              <ordinal>18</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>769</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[transaction_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_count</remote-alias>
+              <ordinal>19</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reimbursed_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[reimbursed_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reimbursed_flag</remote-alias>
+              <ordinal>20</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>provisional_credit_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[provisional_credit_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>provisional_credit_flag</remote-alias>
+              <ordinal>21</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cross_border_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cross_border_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cross_border_flag</remote-alias>
+              <ordinal>22</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>detect_lag_hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[detect_lag_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>detect_lag_hours</remote-alias>
+              <ordinal>23</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>282</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>report_lag_hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[report_lag_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>report_lag_hours</remote-alias>
+              <ordinal>24</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>257</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>resolution_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[resolution_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>resolution_days</remote-alias>
+              <ordinal>25</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>127</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>report_lag_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[report_lag_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>report_lag_band</remote-alias>
+              <ordinal>26</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_name</remote-alias>
+              <ordinal>27</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balance_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[balance_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balance_band</remote-alias>
+              <ordinal>28</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>zelle_enabled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[zelle_enabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>zelle_enabled</remote-alias>
+              <ordinal>29</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>account_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[account_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>account_status</remote-alias>
+              <ordinal>30</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_ref</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_ref]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_ref</remote-alias>
+              <ordinal>31</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>858</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_band</remote-alias>
+              <ordinal>32</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>segment</remote-alias>
+              <ordinal>33</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>34</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>35</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure_years</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tenure_years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure_years</remote-alias>
+              <ordinal>36</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>201</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>digital_enrolled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[digital_enrolled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>digital_enrolled</remote-alias>
+              <ordinal>37</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prior_fraud_claims</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[prior_fraud_claims]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prior_fraud_claims</remote-alias>
+              <ordinal>38</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='JPMorgan CSV Fraud Set.csv' id='JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4'>
+            <properties context=''>
+              <relation connection='textscan.1630v7k1puvc121duj0ks01cbbve' name='JPMorgan CSV Fraud Set.csv' table='[JPMorgan CSV Fraud Set#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='case_ref' ordinal='0' />
+                  <column datatype='string' name='fraud_type' ordinal='1' />
+                  <column datatype='string' name='category' ordinal='2' />
+                  <column datatype='integer' name='is_scam' ordinal='3' />
+                  <column datatype='string' name='channel_name' ordinal='4' />
+                  <column datatype='string' name='sub_scenario' ordinal='5' />
+                  <column datatype='string' name='detection_method' ordinal='6' />
+                  <column datatype='string' name='case_owner_team' ordinal='7' />
+                  <column datatype='string' name='case_status' ordinal='8' />
+                  <column datatype='datetime' name='fraud_start_ts' ordinal='9' />
+                  <column datatype='date' name='fraud_date' ordinal='10' />
+                  <column datatype='datetime' name='detection_ts' ordinal='11' />
+                  <column datatype='datetime' name='customer_report_ts' ordinal='12' />
+                  <column datatype='datetime' name='resolution_ts' ordinal='13' />
+                  <column datatype='real' name='amount_attempted' ordinal='14' />
+                  <column datatype='real' name='amount_lost' ordinal='15' />
+                  <column datatype='real' name='amount_recovered' ordinal='16' />
+                  <column datatype='real' name='net_loss' ordinal='17' />
+                  <column datatype='real' name='recovery_rate' ordinal='18' />
+                  <column datatype='integer' name='transaction_count' ordinal='19' />
+                  <column datatype='integer' name='reimbursed_flag' ordinal='20' />
+                  <column datatype='integer' name='provisional_credit_flag' ordinal='21' />
+                  <column datatype='integer' name='cross_border_flag' ordinal='22' />
+                  <column datatype='integer' name='detect_lag_hours' ordinal='23' />
+                  <column datatype='integer' name='report_lag_hours' ordinal='24' />
+                  <column datatype='integer' name='resolution_days' ordinal='25' />
+                  <column datatype='string' name='report_lag_band' ordinal='26' />
+                  <column datatype='string' name='product_name' ordinal='27' />
+                  <column datatype='string' name='balance_band' ordinal='28' />
+                  <column datatype='integer' name='zelle_enabled' ordinal='29' />
+                  <column datatype='string' name='account_status' ordinal='30' />
+                  <column datatype='string' name='customer_ref' ordinal='31' />
+                  <column datatype='string' name='age_band' ordinal='32' />
+                  <column datatype='string' name='segment' ordinal='33' />
+                  <column datatype='string' name='state' ordinal='34' />
+                  <column datatype='string' name='city' ordinal='35' />
+                  <column datatype='real' name='tenure_years' ordinal='36' />
+                  <column datatype='integer' name='digital_enrolled' ordinal='37' />
+                  <column datatype='integer' name='prior_fraud_claims' ordinal='38' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Loss by State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Net Loss' datatype='real' name='[net_loss]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[net_loss]' derivation='Sum' name='[sum:net_loss:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0te66v407u8cx915uu7991v214vv].[Longitude (generated)]' field-type='quantitative' max='-5775943.5918138651' min='-13929345.879948033' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0te66v407u8cx915uu7991v214vv].[Latitude (generated)]' field-type='quantitative' max='6608863.410610294' min='2345744.950124003' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' />
+              <lod column='[federated.0te66v407u8cx915uu7991v214vv].[none:state:nk]' />
+              <geometry column='[federated.0te66v407u8cx915uu7991v214vv].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0te66v407u8cx915uu7991v214vv].[Latitude (generated)]</rows>
+        <cols>[federated.0te66v407u8cx915uu7991v214vv].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{552A5CF1-C635-4887-BD7C-F4BCB197A5AA}' />
+    </worksheet>
+    <worksheet name='Monthly Loss Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Fraud Date' datatype='date' name='[fraud_date]' role='dimension' type='ordinal' />
+            <column-instance column='[fraud_date]' derivation='Month' name='[mn:fraud_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Net Loss' datatype='real' name='[net_loss]' role='measure' type='quantitative' />
+            <column-instance column='[net_loss]' derivation='Sum' name='[sum:net_loss:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]</rows>
+        <cols>[federated.0te66v407u8cx915uu7991v214vv].[mn:fraud_date:ok]</cols>
+      </table>
+      <simple-id uuid='{11BA3EA8-B4DC-465E-87F5-F2971C527275}' />
+    </worksheet>
+    <worksheet name='Net Loss'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column caption='Net Loss' datatype='real' name='[net_loss]' role='measure' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fraud_type]' derivation='None' name='[none:fraud_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[net_loss]' derivation='Sum' name='[sum:net_loss:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0te66v407u8cx915uu7991v214vv].[none:fraud_type:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0te66v407u8cx915uu7991v214vv].[none:fraud_type:nk]</rows>
+        <cols>[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]</cols>
+      </table>
+      <simple-id uuid='{760D681B-B29C-43E6-B8FA-3FB594AD7696}' />
+    </worksheet>
+    <worksheet name='Recovery Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column-instance column='[recovery_rate]' derivation='Avg' name='[avg:recovery_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Customer Report Ts' datatype='datetime' name='[customer_report_ts]' role='dimension' type='ordinal' />
+            <column caption='Detection Ts' datatype='datetime' name='[detection_ts]' role='dimension' type='ordinal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[report_lag_band]' derivation='None' name='[none:report_lag_band:nk]' pivot='key' type='nominal' />
+            <column caption='Recovery Rate' datatype='real' name='[recovery_rate]' role='measure' type='quantitative' />
+            <column caption='Report Lag Band' datatype='string' name='[report_lag_band]' role='dimension' type='nominal' />
+            <column-instance column='[customer_report_ts]' derivation='Year' name='[yr:customer_report_ts:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[detection_ts]' derivation='Year' name='[yr:detection_ts:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0te66v407u8cx915uu7991v214vv].[avg:recovery_rate:qk]</rows>
+        <cols>([federated.0te66v407u8cx915uu7991v214vv].[none:report_lag_band:nk] / ([federated.0te66v407u8cx915uu7991v214vv].[yr:customer_report_ts:ok] / [federated.0te66v407u8cx915uu7991v214vv].[yr:detection_ts:ok]))</cols>
+      </table>
+      <simple-id uuid='{797C7243-1E65-44CF-AC83-6B7713AE68D8}' />
+    </worksheet>
+    <worksheet name='Reimbursement Gap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Reimbursed Flag' datatype='integer' name='[reimbursed_flag]' role='measure' type='quantitative' />
+            <column-instance column='[reimbursed_flag]' derivation='Sum' name='[sum:reimbursed_flag:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' />
+              <wedge-size column='[federated.0te66v407u8cx915uu7991v214vv].[sum:reimbursed_flag:qk]' />
+              <size column='[federated.0te66v407u8cx915uu7991v214vv].[sum:reimbursed_flag:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CAFA7430-FADD-48C2-A392-C31603DA4C1E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98140' id='3' param='vert' type-v2='layout-flow' w='97538' x='1231' y='930' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5A6DF414-D9EC-4DEC-B061-7E85FC94D936}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{190E95D0-3931-46A8-9022-3A36E345459F}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Recovery Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{349013AD-4F22-4C03-A3CD-447BCB6971E5}' />
+    </window>
+    <window class='worksheet' name='Net Loss'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]</field>
+            <field>[federated.0te66v407u8cx915uu7991v214vv].[none:fraud_type:nk]</field>
+            <field>[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A9EC23B6-D8EA-4780-83E9-70B083AC587D}' />
+    </window>
+    <window class='worksheet' name='Monthly Loss Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0te66v407u8cx915uu7991v214vv].[yr:fraud_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A544278B-5A74-46CF-86BF-AEC646C3262D}' />
+    </window>
+    <window class='worksheet' name='Reimbursement Gap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[sum:reimbursed_flag:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{67A3BC28-60EE-4479-B112-DA11F272DB7F}' />
+    </window>
+    <window class='worksheet' name='Loss by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0te66v407u8cx915uu7991v214vv].[none:state:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B7647D24-4F47-42A4-A8CA-D3F179786058}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{DD0B073B-6F8B-4482-9C77-B4E2FE066922}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{01269E02-5C24-4ED6-9E86-D90D39E2AE59}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACF0lEQVR4nO3TMQEAIAzAMIZ/z0MGRxMFfTq7uweCZmbu7wj4yQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMA
+      aQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5Bm
+      ANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYg
+      zQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIM
+      QJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCk
+      GYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoB
+      SDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0
+      A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSDMAaQYgzQCkGYA0A5BmANIMQJoBSHtb
+      egWA0FAUAAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Loss by State' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Monthly Loss Trend' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Net Loss' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Recovery Rate' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='164' name='Reimbursement Gap' width='164'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
