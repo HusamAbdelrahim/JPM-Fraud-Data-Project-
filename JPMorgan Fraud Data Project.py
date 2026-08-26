@@ -6,10 +6,10 @@ from datetime import date, datetime, timedelta
 from dotenv import load_dotenv
 
 conn = mysql.connector.connect(
-    host = "localhost",
-    user = "root",
-    password = "Mcdarry21",
-    database = "fraud_sections"
+    host = "",
+    user = "",
+    password = "",
+    database = ""
 )
 
 

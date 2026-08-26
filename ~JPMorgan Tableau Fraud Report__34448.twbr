@@ -1,0 +1,1903 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0708.1337                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...creator-author-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' original-version='18.1' source-build='2026.2.1 (20262.26.0708.1337)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='JPMorgan CSV Fraud Set' inline='true' name='federated.0te66v407u8cx915uu7991v214vv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='JPMorgan CSV Fraud Set' name='textscan.1630v7k1puvc121duj0ks01cbbve'>
+            <connection class='textscan' directory='C:/Users/Mason/Desktop/Projects/JPMorgan Data Project' filename='JPMorgan CSV Fraud Set.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1630v7k1puvc121duj0ks01cbbve' name='JPMorgan CSV Fraud Set.csv' table='[JPMorgan CSV Fraud Set#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='case_ref' ordinal='0' />
+            <column datatype='string' name='fraud_type' ordinal='1' />
+            <column datatype='string' name='category' ordinal='2' />
+            <column datatype='integer' name='is_scam' ordinal='3' />
+            <column datatype='string' name='channel_name' ordinal='4' />
+            <column datatype='string' name='sub_scenario' ordinal='5' />
+            <column datatype='string' name='detection_method' ordinal='6' />
+            <column datatype='string' name='case_owner_team' ordinal='7' />
+            <column datatype='string' name='case_status' ordinal='8' />
+            <column datatype='datetime' name='fraud_start_ts' ordinal='9' />
+            <column datatype='date' name='fraud_date' ordinal='10' />
+            <column datatype='datetime' name='detection_ts' ordinal='11' />
+            <column datatype='datetime' name='customer_report_ts' ordinal='12' />
+            <column datatype='datetime' name='resolution_ts' ordinal='13' />
+            <column datatype='real' name='amount_attempted' ordinal='14' />
+            <column datatype='real' name='amount_lost' ordinal='15' />
+            <column datatype='real' name='amount_recovered' ordinal='16' />
+            <column datatype='real' name='net_loss' ordinal='17' />
+            <column datatype='real' name='recovery_rate' ordinal='18' />
+            <column datatype='integer' name='transaction_count' ordinal='19' />
+            <column datatype='integer' name='reimbursed_flag' ordinal='20' />
+            <column datatype='integer' name='provisional_credit_flag' ordinal='21' />
+            <column datatype='integer' name='cross_border_flag' ordinal='22' />
+            <column datatype='integer' name='detect_lag_hours' ordinal='23' />
+            <column datatype='integer' name='report_lag_hours' ordinal='24' />
+            <column datatype='integer' name='resolution_days' ordinal='25' />
+            <column datatype='string' name='report_lag_band' ordinal='26' />
+            <column datatype='string' name='product_name' ordinal='27' />
+            <column datatype='string' name='balance_band' ordinal='28' />
+            <column datatype='integer' name='zelle_enabled' ordinal='29' />
+            <column datatype='string' name='account_status' ordinal='30' />
+            <column datatype='string' name='customer_ref' ordinal='31' />
+            <column datatype='string' name='age_band' ordinal='32' />
+            <column datatype='string' name='segment' ordinal='33' />
+            <column datatype='string' name='state' ordinal='34' />
+            <column datatype='string' name='city' ordinal='35' />
+            <column datatype='real' name='tenure_years' ordinal='36' />
+            <column datatype='integer' name='digital_enrolled' ordinal='37' />
+            <column datatype='integer' name='prior_fraud_claims' ordinal='38' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_ref</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[case_ref]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>case_ref</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fraud_type]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>fraud_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_scam</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[is_scam]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>is_scam</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[channel_name]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>channel_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sub_scenario</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[sub_scenario]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>sub_scenario</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_method</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[detection_method]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>detection_method</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_owner_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[case_owner_team]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>case_owner_team</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>case_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[case_status]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>case_status</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_start_ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[fraud_start_ts]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>fraud_start_ts</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fraud_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[fraud_date]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>fraud_date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detection_ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[detection_ts]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>detection_ts</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_report_ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[customer_report_ts]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>customer_report_ts</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resolution_ts</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[resolution_ts]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>resolution_ts</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_attempted</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount_attempted]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>amount_attempted</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_lost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount_lost]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>amount_lost</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_recovered</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount_recovered]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>amount_recovered</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>net_loss</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[net_loss]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>net_loss</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recovery_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recovery_rate]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>recovery_rate</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>transaction_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[transaction_count]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>transaction_count</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reimbursed_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reimbursed_flag]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>reimbursed_flag</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>provisional_credit_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[provisional_credit_flag]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>provisional_credit_flag</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cross_border_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cross_border_flag]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>cross_border_flag</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>detect_lag_hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[detect_lag_hours]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>detect_lag_hours</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>report_lag_hours</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[report_lag_hours]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>report_lag_hours</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>resolution_days</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[resolution_days]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>resolution_days</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>report_lag_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[report_lag_band]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>report_lag_band</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>product_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[product_name]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>product_name</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[balance_band]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>balance_band</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zelle_enabled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zelle_enabled]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>zelle_enabled</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>account_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[account_status]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>account_status</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>customer_ref</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[customer_ref]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>customer_ref</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_band</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_band]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>age_band</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[segment]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>segment</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>city</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[city]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>city</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tenure_years</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tenure_years]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>tenure_years</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>digital_enrolled</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[digital_enrolled]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>digital_enrolled</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prior_fraud_claims</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[prior_fraud_claims]</local-name>
+            <parent-name>[JPMorgan CSV Fraud Set.csv]</parent-name>
+            <remote-alias>prior_fraud_claims</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='JPMorgan CSV Fraud Set.csv' datatype='table' name='[__tableau_internal_object_id__].[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]' role='measure' type='quantitative' />
+      <column caption='Account Status' datatype='string' name='[account_status]' role='dimension' type='nominal' />
+      <column caption='Age Band' datatype='string' name='[age_band]' role='dimension' type='nominal' />
+      <column caption='Amount Attempted' datatype='real' name='[amount_attempted]' role='measure' type='quantitative' />
+      <column caption='Amount Lost' datatype='real' name='[amount_lost]' role='measure' type='quantitative' />
+      <column caption='Amount Recovered' datatype='real' name='[amount_recovered]' role='measure' type='quantitative' />
+      <column caption='Balance Band' datatype='string' name='[balance_band]' role='dimension' type='nominal' />
+      <column caption='Case Owner Team' datatype='string' name='[case_owner_team]' role='dimension' type='nominal' />
+      <column caption='Case Ref' datatype='string' name='[case_ref]' role='dimension' type='nominal' />
+      <column caption='Case Status' datatype='string' name='[case_status]' role='dimension' type='nominal' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Channel Name' datatype='string' name='[channel_name]' role='dimension' type='nominal' />
+      <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Cross Border Flag' datatype='integer' name='[cross_border_flag]' role='measure' type='quantitative' />
+      <column caption='Customer Ref' datatype='string' name='[customer_ref]' role='dimension' type='nominal' />
+      <column caption='Customer Report Ts' datatype='datetime' name='[customer_report_ts]' role='dimension' type='ordinal' />
+      <column caption='Detect Lag Hours' datatype='integer' name='[detect_lag_hours]' role='measure' type='quantitative' />
+      <column caption='Detection Method' datatype='string' name='[detection_method]' role='dimension' type='nominal' />
+      <column caption='Detection Ts' datatype='datetime' name='[detection_ts]' role='dimension' type='ordinal' />
+      <column caption='Digital Enrolled' datatype='integer' name='[digital_enrolled]' role='measure' type='quantitative' />
+      <column caption='Fraud Date' datatype='date' name='[fraud_date]' role='dimension' type='ordinal' />
+      <column caption='Fraud Start Ts' datatype='datetime' name='[fraud_start_ts]' role='dimension' type='ordinal' />
+      <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+      <column caption='Is Scam' datatype='integer' name='[is_scam]' role='measure' type='quantitative' />
+      <column caption='Net Loss' datatype='real' name='[net_loss]' role='measure' type='quantitative' />
+      <column caption='Prior Fraud Claims' datatype='integer' name='[prior_fraud_claims]' role='measure' type='quantitative' />
+      <column caption='Product Name' datatype='string' name='[product_name]' role='dimension' type='nominal' />
+      <column caption='Provisional Credit Flag' datatype='integer' name='[provisional_credit_flag]' role='measure' type='quantitative' />
+      <column caption='Recovery Rate' datatype='real' name='[recovery_rate]' role='measure' type='quantitative' />
+      <column caption='Reimbursed Flag' datatype='integer' name='[reimbursed_flag]' role='measure' type='quantitative' />
+      <column caption='Report Lag Band' datatype='string' name='[report_lag_band]' role='dimension' type='nominal' />
+      <column caption='Report Lag Hours' datatype='integer' name='[report_lag_hours]' role='measure' type='quantitative' />
+      <column caption='Resolution Days' datatype='integer' name='[resolution_days]' role='measure' type='quantitative' />
+      <column caption='Resolution Ts' datatype='datetime' name='[resolution_ts]' role='dimension' type='ordinal' />
+      <column caption='Segment' datatype='string' name='[segment]' role='dimension' type='nominal' />
+      <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Sub Scenario' datatype='string' name='[sub_scenario]' role='dimension' type='nominal' />
+      <column caption='Tenure Years' datatype='real' name='[tenure_years]' role='measure' type='quantitative' />
+      <column caption='Transaction Count' datatype='integer' name='[transaction_count]' role='measure' type='quantitative' />
+      <column caption='Zelle Enabled' datatype='integer' name='[zelle_enabled]' role='measure' type='quantitative' />
+      <column-instance column='[recovery_rate]' derivation='Avg' name='[avg:recovery_rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[amount_lost]' derivation='Sum' name='[sum:amount_lost:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[net_loss]' derivation='Sum' name='[sum:net_loss:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[recovery_rate]' derivation='Sum' name='[sum:recovery_rate:qk]' pivot='key' type='quantitative' />
+      <drill-paths>
+        <drill-path name='state, city'>
+          <field>[state]</field>
+          <field>[city]</field>
+        </drill-path>
+      </drill-paths>
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Mason/AppData/Local/Temp/TableauTemp/#TableauTemp_0sd52rp1vcf7dm181sxh20im7gbg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2026 11:48:50 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>case_ref</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[case_ref]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_ref</remote-alias>
+              <ordinal>0</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fraud_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_type</remote-alias>
+              <ordinal>1</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>2</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>is_scam</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[is_scam]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>is_scam</remote-alias>
+              <ordinal>3</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sub_scenario</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[sub_scenario]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sub_scenario</remote-alias>
+              <ordinal>5</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>27</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>detection_method</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[detection_method]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>detection_method</remote-alias>
+              <ordinal>6</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>case_owner_team</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[case_owner_team]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_owner_team</remote-alias>
+              <ordinal>7</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>case_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[case_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>case_status</remote-alias>
+              <ordinal>8</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_start_ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[fraud_start_ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_start_ts</remote-alias>
+              <ordinal>9</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fraud_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[fraud_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fraud_date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>598</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>detection_ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[detection_ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>detection_ts</remote-alias>
+              <ordinal>11</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_report_ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[customer_report_ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_report_ts</remote-alias>
+              <ordinal>12</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>750</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>resolution_ts</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[resolution_ts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>resolution_ts</remote-alias>
+              <ordinal>13</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>887</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_attempted</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount_attempted]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_attempted</remote-alias>
+              <ordinal>14</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_lost</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount_lost]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_lost</remote-alias>
+              <ordinal>15</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>899</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_recovered</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount_recovered]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_recovered</remote-alias>
+              <ordinal>16</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>893</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>net_loss</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[net_loss]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>net_loss</remote-alias>
+              <ordinal>17</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>821</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recovery_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[recovery_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recovery_rate</remote-alias>
+              <ordinal>18</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>769</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>transaction_count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[transaction_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>transaction_count</remote-alias>
+              <ordinal>19</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>reimbursed_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[reimbursed_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reimbursed_flag</remote-alias>
+              <ordinal>20</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>provisional_credit_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[provisional_credit_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>provisional_credit_flag</remote-alias>
+              <ordinal>21</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cross_border_flag</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[cross_border_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cross_border_flag</remote-alias>
+              <ordinal>22</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>detect_lag_hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[detect_lag_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>detect_lag_hours</remote-alias>
+              <ordinal>23</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>282</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>report_lag_hours</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[report_lag_hours]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>report_lag_hours</remote-alias>
+              <ordinal>24</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>257</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>resolution_days</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[resolution_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>resolution_days</remote-alias>
+              <ordinal>25</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>127</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>report_lag_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[report_lag_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>report_lag_band</remote-alias>
+              <ordinal>26</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>product_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[product_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_name</remote-alias>
+              <ordinal>27</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balance_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[balance_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balance_band</remote-alias>
+              <ordinal>28</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>zelle_enabled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[zelle_enabled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>zelle_enabled</remote-alias>
+              <ordinal>29</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>account_status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[account_status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>account_status</remote-alias>
+              <ordinal>30</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>customer_ref</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[customer_ref]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>customer_ref</remote-alias>
+              <ordinal>31</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>858</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_band</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_band]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_band</remote-alias>
+              <ordinal>32</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>segment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[segment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>segment</remote-alias>
+              <ordinal>33</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>34</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>city</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[city]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>city</remote-alias>
+              <ordinal>35</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tenure_years</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tenure_years]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tenure_years</remote-alias>
+              <ordinal>36</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>201</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>digital_enrolled</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[digital_enrolled]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>digital_enrolled</remote-alias>
+              <ordinal>37</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prior_fraud_claims</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[prior_fraud_claims]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prior_fraud_claims</remote-alias>
+              <ordinal>38</ordinal>
+              <family>JPMorgan CSV Fraud Set.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0te66v407u8cx915uu7991v214vv].[avg:recovery_rate:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0te66v407u8cx915uu7991v214vv].[sum:amount_lost:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0te66v407u8cx915uu7991v214vv].[sum:recovery_rate:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='JPMorgan CSV Fraud Set.csv' id='JPMorgan CSV Fraud Set.csv_FBD3EA0068BA4143B7CFE800932A19C4'>
+            <properties context=''>
+              <relation connection='textscan.1630v7k1puvc121duj0ks01cbbve' name='JPMorgan CSV Fraud Set.csv' table='[JPMorgan CSV Fraud Set#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='case_ref' ordinal='0' />
+                  <column datatype='string' name='fraud_type' ordinal='1' />
+                  <column datatype='string' name='category' ordinal='2' />
+                  <column datatype='integer' name='is_scam' ordinal='3' />
+                  <column datatype='string' name='channel_name' ordinal='4' />
+                  <column datatype='string' name='sub_scenario' ordinal='5' />
+                  <column datatype='string' name='detection_method' ordinal='6' />
+                  <column datatype='string' name='case_owner_team' ordinal='7' />
+                  <column datatype='string' name='case_status' ordinal='8' />
+                  <column datatype='datetime' name='fraud_start_ts' ordinal='9' />
+                  <column datatype='date' name='fraud_date' ordinal='10' />
+                  <column datatype='datetime' name='detection_ts' ordinal='11' />
+                  <column datatype='datetime' name='customer_report_ts' ordinal='12' />
+                  <column datatype='datetime' name='resolution_ts' ordinal='13' />
+                  <column datatype='real' name='amount_attempted' ordinal='14' />
+                  <column datatype='real' name='amount_lost' ordinal='15' />
+                  <column datatype='real' name='amount_recovered' ordinal='16' />
+                  <column datatype='real' name='net_loss' ordinal='17' />
+                  <column datatype='real' name='recovery_rate' ordinal='18' />
+                  <column datatype='integer' name='transaction_count' ordinal='19' />
+                  <column datatype='integer' name='reimbursed_flag' ordinal='20' />
+                  <column datatype='integer' name='provisional_credit_flag' ordinal='21' />
+                  <column datatype='integer' name='cross_border_flag' ordinal='22' />
+                  <column datatype='integer' name='detect_lag_hours' ordinal='23' />
+                  <column datatype='integer' name='report_lag_hours' ordinal='24' />
+                  <column datatype='integer' name='resolution_days' ordinal='25' />
+                  <column datatype='string' name='report_lag_band' ordinal='26' />
+                  <column datatype='string' name='product_name' ordinal='27' />
+                  <column datatype='string' name='balance_band' ordinal='28' />
+                  <column datatype='integer' name='zelle_enabled' ordinal='29' />
+                  <column datatype='string' name='account_status' ordinal='30' />
+                  <column datatype='string' name='customer_ref' ordinal='31' />
+                  <column datatype='string' name='age_band' ordinal='32' />
+                  <column datatype='string' name='segment' ordinal='33' />
+                  <column datatype='string' name='state' ordinal='34' />
+                  <column datatype='string' name='city' ordinal='35' />
+                  <column datatype='real' name='tenure_years' ordinal='36' />
+                  <column datatype='integer' name='digital_enrolled' ordinal='37' />
+                  <column datatype='integer' name='prior_fraud_claims' ordinal='38' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Loss by State'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Net Loss' datatype='real' name='[net_loss]' role='measure' type='quantitative' />
+            <column-instance column='[state]' derivation='None' name='[none:state:nk]' pivot='key' type='nominal' />
+            <column caption='State' datatype='string' name='[state]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column-instance column='[net_loss]' derivation='Sum' name='[sum:net_loss:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0te66v407u8cx915uu7991v214vv].[Longitude (generated)]' field-type='quantitative' max='10221050.888280869' min='-22415879.194883995' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0te66v407u8cx915uu7991v214vv].[Latitude (generated)]' field-type='quantitative' max='13280497.209380541' min='-5018572.3179958174' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' palette='tableau-map-temperatur' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' />
+              <lod column='[federated.0te66v407u8cx915uu7991v214vv].[none:state:nk]' />
+              <geometry column='[federated.0te66v407u8cx915uu7991v214vv].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0te66v407u8cx915uu7991v214vv].[Latitude (generated)]</rows>
+        <cols>[federated.0te66v407u8cx915uu7991v214vv].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{552A5CF1-C635-4887-BD7C-F4BCB197A5AA}' />
+    </worksheet>
+    <worksheet name='Monthly Loss Trend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Fraud Date' datatype='date' name='[fraud_date]' role='dimension' type='ordinal' />
+            <column-instance column='[fraud_date]' derivation='Month' name='[mn:fraud_date:qk]' pivot='key' type='quantitative' />
+            <column caption='Net Loss' datatype='real' name='[net_loss]' role='measure' type='quantitative' />
+            <column caption='Recovery Rate' datatype='real' name='[recovery_rate]' role='measure' type='quantitative' />
+            <column-instance column='[net_loss]' derivation='Sum' name='[sum:net_loss:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[recovery_rate]' derivation='Sum' name='[sum:recovery_rate:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0te66v407u8cx915uu7991v214vv].[sum:recovery_rate:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0te66v407u8cx915uu7991v214vv].[sum:recovery_rate:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk] + [federated.0te66v407u8cx915uu7991v214vv].[sum:recovery_rate:qk])</rows>
+        <cols>[federated.0te66v407u8cx915uu7991v214vv].[mn:fraud_date:qk]</cols>
+      </table>
+      <simple-id uuid='{11BA3EA8-B4DC-465E-87F5-F2971C527275}' />
+    </worksheet>
+    <worksheet name='Net Loss'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Fraud Type' datatype='string' name='[fraud_type]' role='dimension' type='nominal' />
+            <column caption='Net Loss' datatype='real' name='[net_loss]' role='measure' type='quantitative' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[fraud_type]' derivation='None' name='[none:fraud_type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[net_loss]' derivation='Sum' name='[sum:net_loss:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0te66v407u8cx915uu7991v214vv].[none:fraud_type:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0te66v407u8cx915uu7991v214vv].[none:fraud_type:nk]</rows>
+        <cols>[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]</cols>
+      </table>
+      <simple-id uuid='{760D681B-B29C-43E6-B8FA-3FB594AD7696}' />
+    </worksheet>
+    <worksheet name='Recovery Rate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Amount Lost' datatype='real' name='[amount_lost]' role='measure' type='quantitative' />
+            <column-instance column='[recovery_rate]' derivation='Avg' name='[avg:recovery_rate:qk]' pivot='key' type='quantitative' />
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column caption='Customer Report Ts' datatype='datetime' name='[customer_report_ts]' role='dimension' type='ordinal' />
+            <column caption='Detection Ts' datatype='datetime' name='[detection_ts]' role='dimension' type='ordinal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[report_lag_band]' derivation='None' name='[none:report_lag_band:nk]' pivot='key' type='nominal' />
+            <column caption='Recovery Rate' datatype='real' name='[recovery_rate]' role='measure' type='quantitative' />
+            <column caption='Report Lag Band' datatype='string' name='[report_lag_band]' role='dimension' type='nominal' />
+            <column-instance column='[amount_lost]' derivation='Sum' name='[sum:amount_lost:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[customer_report_ts]' derivation='Year' name='[yr:customer_report_ts:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[detection_ts]' derivation='Year' name='[yr:detection_ts:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0te66v407u8cx915uu7991v214vv].[sum:amount_lost:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0te66v407u8cx915uu7991v214vv].[avg:recovery_rate:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0te66v407u8cx915uu7991v214vv].[Multiple Values]</rows>
+        <cols>([federated.0te66v407u8cx915uu7991v214vv].[none:category:nk] / ([federated.0te66v407u8cx915uu7991v214vv].[none:report_lag_band:nk] / ([federated.0te66v407u8cx915uu7991v214vv].[yr:customer_report_ts:ok] / ([federated.0te66v407u8cx915uu7991v214vv].[yr:detection_ts:ok] / [federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]))))</cols>
+      </table>
+      <simple-id uuid='{797C7243-1E65-44CF-AC83-6B7713AE68D8}' />
+    </worksheet>
+    <worksheet name='Reimbursement Gap'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='JPMorgan CSV Fraud Set' name='federated.0te66v407u8cx915uu7991v214vv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0te66v407u8cx915uu7991v214vv'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column caption='Reimbursed Flag' datatype='integer' name='[reimbursed_flag]' role='measure' type='quantitative' />
+            <column-instance column='[reimbursed_flag]' derivation='Sum' name='[sum:reimbursed_flag:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' />
+              <wedge-size column='[federated.0te66v407u8cx915uu7991v214vv].[sum:reimbursed_flag:qk]' />
+              <size column='[federated.0te66v407u8cx915uu7991v214vv].[sum:reimbursed_flag:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CAFA7430-FADD-48C2-A392-C31603DA4C1E}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='1280' maxwidth='2220' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98346' id='15' param='horz' type-v2='layout-flow' w='99064' x='468' y='827'>
+            <zone h='98346' id='13' type-v2='layout-basic' w='89702' x='468' y='827'>
+              <zone h='49005' id='7' param='horz' type-v2='layout-flow' w='89702' x='468' y='827'>
+                <zone h='49005' id='5' type-v2='layout-basic' w='89702' x='468' y='827'>
+                  <zone h='49005' id='3' name='Recovery Rate' w='44845' x='468' y='827'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='21050' id='9' name='Net Loss' w='44857' x='45313' y='827'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='21053' id='10' name='Monthly Loss Trend' w='44857' x='45313' y='25326'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='3453' id='11' name='Monthly Loss Trend' pane-specification-id='1' param='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' type-v2='color' w='44857' x='45313' y='46379'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='3449' id='8' name='Recovery Rate' pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' type-v2='color' w='40743' x='49427' y='21877'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='49341' id='12' name='Reimbursement Gap' w='44850' x='468' y='49832'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49341' id='19' name='Loss by State' w='44852' x='45318' y='49832'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98346' id='14' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='827'>
+              <zone h='4757' id='16' name='Reimbursement Gap' pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[sum:reimbursed_flag:qk]' type-v2='size' w='9362' x='90170' y='827'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6722' id='20' name='Loss by State' pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' type-v2='color' w='9362' x='90170' y='5584'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98728' id='22' param='vert' type-v2='layout-flow' w='99280' x='360' y='636'>
+                <zone fixed-size='280' h='49197' id='3' is-fixed='true' name='Recovery Rate' w='46032' x='360' y='636'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3462' id='8' name='Recovery Rate' pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' type-v2='color' w='41818' x='50615' y='21771'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='263' h='21135' id='9' is-fixed='true' name='Net Loss' w='46041' x='46392' y='636'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='263' h='21135' id='10' is-fixed='true' name='Monthly Loss Trend' w='46041' x='46392' y='25233'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3465' id='11' name='Monthly Loss Trend' pane-specification-id='1' param='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' type-v2='color' w='46041' x='46392' y='46368'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49531' id='12' is-fixed='true' name='Reimbursement Gap' w='46037' x='360' y='49833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3659' id='16' name='Reimbursement Gap' pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[sum:reimbursed_flag:qk]' type-v2='size' w='7207' x='92433' y='636'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49531' id='19' is-fixed='true' name='Loss by State' w='46036' x='46397' y='49833'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='5171' id='20' name='Loss by State' pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' type-v2='color' w='7207' x='92433' y='4295'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D3A77DFE-854E-4F9F-9DA2-79D0B9199AE6}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Recovery Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{349013AD-4F22-4C03-A3CD-447BCB6971E5}' />
+    </window>
+    <window class='worksheet' name='Net Loss'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A9EC23B6-D8EA-4780-83E9-70B083AC587D}' />
+    </window>
+    <window class='worksheet' name='Monthly Loss Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0te66v407u8cx915uu7991v214vv].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A544278B-5A74-46CF-86BF-AEC646C3262D}' />
+    </window>
+    <window class='worksheet' name='Reimbursement Gap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[none:category:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[sum:reimbursed_flag:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{67A3BC28-60EE-4479-B112-DA11F272DB7F}' />
+    </window>
+    <window class='worksheet' name='Loss by State'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0te66v407u8cx915uu7991v214vv].[sum:net_loss:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B7647D24-4F47-42A4-A8CA-D3F179786058}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Loss by State'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Loss Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Net Loss' />
+        <viewpoint name='Recovery Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Reimbursement Gap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='20' />
+      <simple-id uuid='{6F39CA1B-F957-43D2-A8CB-8622A250C2D0}' />
+    </window>
+  </windows>
+</workbook>
